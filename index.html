@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <title>IndorePlants - Green Your Home</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
+      <nav
+        class="container flex items-center justify-between h-16 sm:h-20 px-4 mx-auto"
+      >
+        <div class="font-Lobster sm:text-2xl text-white">IndorePlants.</div>
+        <div
+          id="nav-menu"
+          class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/95 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto"
+        >
+          <ul class="flex flex-col items-center gap-8 lg:flex-row">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#popular" class="nav-link">Popular</a></li>
+            <li><a href="#review" class="nav-link">Review</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+            <img src="assets/img/leaf-1.png" alt="leaf_image" class="w-32" />
+          </div>
+          <div class="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
+            <img src="assets/img/leaf-2.png" alt="leaf_image" class="w-32" />
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <i
+            class="ri-shopping-cart-2-line text-white text-xl cursor-pointer hover:text-yellow-500 duration-300"
+          ></i>
+          <i
+            class="ri-user-3-line text-white text-xl cursor-pointer hover:text-yellow-500 duration-300"
+          ></i>
+          <i
+            class="ri-menu-4-line text-xl sm:text-3xl cursor-pointer text-white lg:hidden"
+            id="hamburger"
+          ></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="pt-32 pb-20">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center gap-10 lg:flex-row">
+          <!-- Content -->
+          <div class="w-full space-y-6 lg:w-1/2">
+            <h1
+              class="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight"
+            >
+              <span class="text-yellow-500">Plants</span>
+              make a
+              <br />
+              positive
+              <span class="text-yellow-500">impact</span>
+              on
+              <br />
+              your environment
+            </h1>
+            <p class="text-slate-300 font-Lobster text-lg">
+              Discover the perfect plants to transform your living space into a
+              green paradise. Our carefully selected indoor plants bring life,
+              beauty, and fresh air to your home.
+            </p>
+            <div class="flex flex-col gap-4 sm:flex-row md:gap-6 lg:pt-8">
+              <button class="btn hover:bg-white hover:text-black">
+                <span>Shop Now</span>
+                <i class="ri-leaf-line"></i>
+              </button>
+              <button class="btn btn_outline">
+                <span>Explore More</span>
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </div>
+            <div class="flex items-center gap-6 text-lg pt-8">
+              <i
+                class="ri-facebook-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer text-xl"
+              ></i>
+              <i
+                class="ri-twitter-x-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer text-xl"
+              ></i>
+              <i
+                class="ri-instagram-line text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer text-xl"
+              ></i>
+              <i
+                class="ri-linkedin-fill text-slate-300 hover:text-yellow-500 duration-300 cursor-pointer text-xl"
+              ></i>
+            </div>
+          </div>
+          <!-- Image -->
+          <div class="w-full relative lg:w-1/2">
+            <img
+              src="./assets/img/cart-1.png"
+              alt="Beautiful indoor plants"
+              class="rounded-2xl shadow-2xl"
+            />
+            <!-- Decorative elements -->
+            <div class="absolute -top-8 right-8 opacity-30 animate-movingY">
+              <i class="ri-leaf-line text-6xl text-yellow-500"></i>
+            </div>
+            <div class="absolute bottom-8 left-8 opacity-30 animate-movingY">
+              <i class="ri-flower-line text-6xl text-yellow-500"></i>
+            </div>
+            <div class="absolute top-1/2 -left-8 opacity-30 animate-pulse">
+              <i class="ri-plant-line text-6xl text-yellow-500"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-green-900">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Us</h2>
+          <p class="text-slate-300 max-w-2xl mx-auto">
+            We provide the best quality plants with care and expertise
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div
+            class="text-center p-6 bg-green-800 rounded-2xl hover:bg-green-700 duration-300 hover:cursor-pointer"
+          >
+            <i class="ri-secure-payment-line text-4xl text-yellow-500 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Quality Plants</h3>
+            <p class="text-slate-300">
+              Carefully selected plants from trusted growers
+            </p>
+          </div>
+          <!-- Feature 2 -->
+          <div
+            class="text-center p-6 bg-green-800 rounded-2xl hover:bg-green-700 duration-300 hover:cursor-pointer"
+          >
+            <i class="ri-truck-line text-4xl text-yellow-500 mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Fast Delivery</h3>
+            <p class="text-slate-300">
+              Quick and safe delivery to your doorstep
+            </p>
+          </div>
+          <!-- Feature 3 -->
+          <div
+            class="text-center p-6 bg-green-800 rounded-2xl hover:bg-green-700 duration-300 hover:cursor-pointer"
+          >
+            <i
+              class="ri-customer-service-2-line text-4xl text-yellow-500 mb-4"
+            ></i>
+            <h3 class="text-xl font-bold mb-2">Expert Support</h3>
+            <p class="text-slate-300">
+              24/7 customer support for all your plant needs
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Products</h2>
+          <p class="text-slate-300 max-w-2xl mx-auto">
+            Discover our most popular indoor plants
+          </p>
+        </div>
+        <div
+          class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Product 1 -->
+          <div
+            class="bg-green-800 rounded-2xl p-6 hover:shadow-2xl duration-300 w-full"
+          >
+            <img
+              src="./assets/img/cart-2.png"
+              alt="Monstera Plant"
+              class="rounded-2xl mb-4 w-full h-48 object-contain"
+            />
+            <h3 class="text-xl font-bold mb-2">Monstera Deliciosa</h3>
+            <p class="text-slate-300 mb-4">
+              Beautiful tropical plant with unique leaf patterns
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-yellow-500 font-bold text-xl">$45.99</span>
+              <button class="btn hover:bg-white hover:text-green-800">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div
+            class="bg-green-800 rounded-2xl p-6 hover:shadow-2xl duration-300 w-full"
+          >
+            <img
+              src="./assets/img/cart-3.png"
+              alt="Snake Plant"
+              class="rounded-2xl mb-4 w-full h-48 object-contain"
+            />
+            <h3 class="text-xl font-bold mb-2">Snake Plant</h3>
+            <p class="text-slate-300 mb-4">
+              Low maintenance plant perfect for beginners
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-yellow-500 font-bold text-xl">$29.99</span>
+              <button class="btn hover:bg-white hover:text-green-800">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div
+            class="bg-green-800 rounded-2xl p-6 hover:shadow-2xl duration-300 w-full"
+          >
+            <img
+              src="./assets/img/cart-4.png"
+              alt="Fiddle Leaf Fig"
+              class="rounded-2xl mb-4 w-full h-48 object-contain"
+            />
+            <h3 class="text-xl font-bold mb-2">Fiddle Leaf Fig</h3>
+            <p class="text-slate-300 mb-4">
+              Elegant plant that makes a statement
+            </p>
+            <div class="flex justify-between items-center">
+              <span class="text-yellow-500 font-bold text-xl">$59.99</span>
+              <button class="btn hover:bg-white hover:text-green-800">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="review" class="bg-green-900">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            What Our Customers Say
+          </h2>
+          <p class="text-slate-300 max-w-2xl mx-auto">
+            Real experiences from plant lovers like you
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Review 1 -->
+          <div
+            class="bg-green-800 rounded-2xl p-6 text-center hover:transform hover:scale-105 duration-300 hover:cursor-pointer"
+          >
+            <div
+              class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-4 border-yellow-500"
+            >
+              <img
+                src="assets/img/review-1.jpg"
+                alt="Review 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">Sarah Johnson</h3>
+            <div class="flex justify-center mb-3">
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+            </div>
+            <p class="text-slate-300 text-sm">
+              "The plants arrived in perfect condition. The quality is
+              exceptional and they've transformed my living space!"
+            </p>
+          </div>
+          <!-- Review 2 -->
+          <div
+            class="bg-green-800 hover:cursor-pointer rounded-2xl p-6 text-center hover:transform hover:scale-105 duration-300"
+          >
+            <div
+              class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-4 border-yellow-500"
+            >
+              <img
+                src="assets/img/review-2.jpg"
+                alt="Review 2"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">Mike Chen</h3>
+            <div class="flex justify-center mb-3">
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-half-fill text-yellow-500"></i>
+            </div>
+            <p class="text-slate-300 text-sm">
+              "Excellent customer service! They helped me choose the perfect
+              plants for my apartment's lighting conditions."
+            </p>
+          </div>
+          <!-- Review 3 -->
+          <div
+            class="bg-green-800 rounded-2xl p-6 text-center hover:transform hover:scale-105 duration-300 hover:cursor-pointer"
+          >
+            <div
+              class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-4 border-yellow-500"
+            >
+              <img
+                src="assets/img/review-3.jpg"
+                alt="review-3"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">Emily Rodriguez</h3>
+            <div class="flex justify-center mb-3">
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+            </div>
+            <p class="text-slate-300 text-sm">
+              "The delivery was super fast and the packaging was eco-friendly.
+              Will definitely order again!"
+            </p>
+          </div>
+          <!-- Review 4 -->
+          <div
+            class="bg-green-800 hover:cursor-pointer rounded-2xl p-6 text-center hover:transform hover:scale-105 duration-300"
+          >
+            <div
+              class="w-20 h-20 mx-auto mb-4 rounded-full overflow-hidden border-4 border-yellow-500"
+            >
+              <img
+                src="assets/img/review-4.jpg"
+                alt="Review 4"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <h3 class="text-xl font-bold mb-2">David Kim</h3>
+            <div class="flex justify-center mb-3">
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-fill text-yellow-500"></i>
+              <i class="ri-star-line text-yellow-500"></i>
+            </div>
+            <p class="text-slate-300 text-sm">
+              "Great variety of plants. The care instructions that came with my
+              order were very helpful for a beginner like me."
+            </p>
+          </div>
+        </div>
+
+        <!-- Statistics -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-8 border-t border-green-800"
+        >
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-bold text-yellow-500 mb-2">
+              500+
+            </div>
+            <p class="text-slate-300">Happy Customers</p>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-bold text-yellow-500 mb-2">
+              200+
+            </div>
+            <p class="text-slate-300">Plant Varieties</p>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-bold text-yellow-500 mb-2">
+              98%
+            </div>
+            <p class="text-slate-300">Success Rate</p>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl font-bold text-yellow-500 mb-2">
+              24/7
+            </div>
+            <p class="text-slate-300">Support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-2xl font-Lobster mb-4">IndorePlants.</h3>
+            <p class="text-slate-300">
+              Bringing nature indoors, one plant at a time.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-slate-300 hover:text-yellow-500 duration-300"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-slate-300 hover:text-yellow-500 duration-300"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  class="text-slate-300 hover:text-yellow-500 duration-300"
+                >
+                  Products
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Contact Info</h4>
+            <ul class="space-y-2">
+              <li
+                class="text-slate-300 hover:text-yellow-500 hover:cursor-pointer"
+              >
+                <i class="ri-phone-line mr-2"></i>
+                +1 234 567 890
+              </li>
+              <li
+                class="text-slate-300 hover:text-yellow-500 hover:cursor-pointer"
+              >
+                <i class="ri-mail-line mr-2"></i>
+                info@indoreplants.com
+              </li>
+              <li
+                class="text-slate-300 hover:text-yellow-500 hover:cursor-pointer"
+              >
+                <i class="ri-map-pin-line mr-2"></i>
+                Green Street, Plant City
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+            <p class="text-slate-300 mb-4">Subscribe for updates</p>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="bg-green-800 px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              />
+              <button
+                class="bg-yellow-500 px-4 py-2 rounded-r-lg hover:bg-white hover:text-green-800 duration-300"
+              >
+                <i class="ri-send-plane-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-green-800 mt-8 pt-8 text-center">
+          <p class="text-slate-300">
+            &copy;
+            <span id="year"></span>
+            IndorePlants. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
